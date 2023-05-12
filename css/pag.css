@@ -1,0 +1,520 @@
+@import url('https://fonts.googleapis.com/css2? family= Anek+Telugu:wght@300 & display=swap');
+
+/*header*/
+
+body {
+  background-color: white;
+	margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: 'Anek Telugu', sans-serif;
+
+  
+}
+a{
+  text-decoration: none;
+}
+
+.topo-site {
+background-color: black;
+display: flex;
+height: 15%;
+width: 100%;
+}
+
+.logo img{
+	width: 150px;
+  padding: 50px;
+  margin-top: 15px;
+  margin-left: 150px;
+}
+
+  .icones-header img{
+    width: 28px;
+    height: 28px;
+    margin-left: 25px;
+  }
+ 
+  .icones-header{
+    display: flex;
+  margin-top: 65px;
+  margin-left: 200px;
+    
+  }
+
+  .icones-header:hover .sub-menu-1{
+    display: block;
+    background-color: black;
+    margin-top: 35px;
+    margin-left: -100px;
+    border-radius: 10px;
+    z-index: 2;
+  }
+
+  .icones-header:hover .sub-menu-1 ul li{
+    width: 100px;
+    text-align: center;
+    border-radius: 10px;
+    transition: 0,7s;
+    text-decoration: none;
+    color: red;
+      }
+
+      .icones-header:hover .sub-menu-1 ul li:hover{
+        background-color: gray;
+      }
+    /*Barra de Pesquisa*/
+header nav{
+  background-color: black;
+  text-align: center;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  margin-top: 10px;
+
+  
+  
+}
+header nav ul{
+  display: inline-flex;
+  list-style: none;
+  color: white;
+  margin-top: 4.5%;
+}
+
+header nav ul li{
+  width: 90px;
+  margin: 10px;
+  padding: 10px;
+  color: white;
+}
+
+header nav ul li a{
+  text-decoration: none;
+  color: white;
+}
+
+   a:visited{
+    color: white;
+  }
+
+  .sub-menu-1{
+    display: none;
+  }
+
+  nav ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    background-color: black;
+    margin-top: 15px;
+    margin-left: -38px;
+    border-radius: 10px;
+    z-index: 2;
+  }
+
+  nav ul li:hover .sub-menu-1 ul{
+    display: block;
+  }
+
+  nav ul li:hover .sub-menu-1 ul li{
+width: 100px;
+text-align: center;
+border-radius: 10px;
+transition: 0,7s;
+  }
+
+  nav ul li:hover .sub-menu-1 ul li:hover{
+    background-color: gray;
+  }
+  
+/*Fecha barra de pesquisa*/
+/*Fecha header*/
+
+  /*Corpo index*/
+.content{
+  background-color: white;
+  height: 480px;
+  width: 100%;
+  overflow: hidden;
+  margin-left: 950px;
+  margin-top: 240px;
+  transform:  translate(-50%, -50%);
+  z-index: 1;
+
+}
+.carrossel-iphone{
+  height: 300px;
+}
+
+
+
+.navegation{
+position: absolute;
+bottom: 20px;
+left: 50%;
+transform: translate(-50%);
+display: flex;
+
+}
+
+.bar{
+width: 70px;
+height: 18px;
+border: 2px solid #ffff;
+margin: 6px;
+border-radius: 5px;
+cursor: pointer;
+transition: .4s;
+
+
+}
+
+.bar:hover{
+
+background-color: #ffff;
+}
+
+#slide1, #slide2, #slide3, #slide4{
+display: none;
+
+}
+
+.slides{
+display: flex;
+width: 500%;
+height: 100%;
+}
+
+.slide{
+width: 20%;
+transition: .6s;
+}
+
+.slide img{
+width: 100%;
+height: 100%;
+}
+
+#slide1:checked ~ .s1{
+margin-left: 0;
+}
+
+#slide2:checked ~ .s1{
+margin-left: -20%;
+}
+
+#slide3:checked ~ .s1{
+margin-left: -40%;
+}
+
+#slide4:checked ~ .s1{
+margin-left: -60%;
+}
+
+#slide5:checked ~ .s1{
+margin-left: -80%;
+}
+
+.inf{
+  color:black ;
+  display: flex;
+  margin-right: 7%;
+  margin-left: 7%;
+  padding: 20px;
+  border:black 2px solid;
+  border-radius: 15px;
+}
+
+.inf div{
+
+  display: flex;
+  margin-left: 12%;
+  align-items: center;
+}
+
+.section-dois-container{
+  width: 1030px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin-top: 21px;
+	padding-top: 20px;
+	padding-right: 20px;
+	padding-bottom: 0px;
+	padding-left: 20px;
+	font-size: 20px;
+	border-radius: 15px;
+  margin: auto;
+}
+
+.destaques h1{
+  color: black;
+}
+.destaques{
+  margin-bottom: 150px;
+  font-size: 30px;
+}
+
+.destaques img{
+  border-radius: 20px;
+}
+
+.destaque1{
+  display:flex ;
+  justify-content: space-between;
+}
+
+.destaque2{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/*fecha corpo index */
+
+
+/*corpo iphone*/
+h1{
+  font-size: 50px;
+  color: white;
+}
+.modelos-iphone{
+  display: flex;
+  justify-content: center;
+}
+
+.navegacao-iphone{
+  margin-left: 2%;
+  margin-right: 2%;
+  background-color: white;
+  padding: 5px;
+  border: 2px solid black;
+}
+
+.navegacao-iphone img{
+  height: 170px;
+  width: 180px;
+}
+.navegacao-iphone h5{
+  margin-top: 0;
+  text-align: center;
+  color: black;
+}
+
+.navegacao-iphone:visited{
+  color: pink;
+}
+
+.titulo-nav-iphone h1{
+  text-align: center;
+  color: black;
+}
+
+.imagens-corpo-iphone {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.imagens-corpo-iphone img{
+  height: 400px;
+  width: 700px;
+  margin-right: 50px;
+}
+
+  .grade-iphone{
+    display: flex;
+    justify-content: center;
+  }
+  .grade-iphone img{
+    height: 200px;
+    width: 200px;
+  }
+  
+  .conteudo-grade{
+    margin-left: 1%;
+    margin-right: 1%;
+    background-color: white;
+    height: 100%;
+    max-width: 250px;
+    padding: 10px;
+    border-radius: 15px;
+    margin-bottom: 5%;
+  }
+  
+  .h1-grade h1{
+    color: black;
+    text-align: center;
+  }
+
+
+
+
+/*Corpo Sobre nós*/
+.corpo-sobrenos{
+  margin: 25px 25px 25px 25px;
+  letter-spacing: 2px;
+  font-size: large;
+  display:flex;
+ 
+}
+.h1-sobrenos{
+  display: flex;
+  justify-content: center;
+}
+.h1-sobrenos h1{
+  color: black;
+  font-size: 75px;
+}
+.corpo-sobrenos p{
+color: black;
+max-width: 100%;
+margin-left: 25px;
+font-size: 25px;
+}
+
+.corpo-sobrenos img{
+height:550px;
+width: 70%;
+}
+/*fecha sobre nos*/
+
+/*Pags Item*/
+.todos-produt{
+   margin: 1% 0px 5% 0px;
+   
+}
+.todos-produt h1{
+  margin-left: 20%;
+  color: black;
+}
+#container-item{
+  display: grid;
+  justify-content: center;
+  place-items: center;
+  max-width: 100%;
+ 
+  margin: 2%;
+  grid-auto-rows: 420px 420px;
+  grid-template-columns: repeat(4, 300px);
+  grid-gap: 20px;
+
+  
+}
+
+
+.produto img{
+  width: 90%;
+  margin-bottom: 2%;
+
+}
+
+.produto{
+  color: black;
+  background-color: white;
+  padding:2%;
+}
+
+/*fecha pags item*/
+
+/*Rodapé */
+.rodape{
+background-color: black;
+max-height: 100%;
+width: 100%;
+color: white;
+margin-top: 2%;
+}
+
+
+.primeira-parte-footer{
+  display: flex;
+  align-items: center;
+ justify-content: space-around;
+ margin: 0px 12% 0px 12%;
+ padding: 3%;
+ color: white;
+ 
+
+}
+
+
+.primeira-parte-footer img{
+  height: 25%;
+  width: 20%;
+  
+}
+
+.primeira-parte-footer p{
+  font-size: 13px;
+
+}
+
+.segunda-parte-footer{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 12px;
+  align-items:center;
+  background-color:#1C1C1C;
+  color:white;
+  border-top: 2px solid white;
+  padding: 1%;
+}
+
+/*fecha rodape*/
+
+
+
+@media only screen and (max-device-width: 750px) {
+
+.topo-site{
+flex-direction: column; 
+max-width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+height: 600px;
+
+}
+
+header nav{
+display: flex;
+flex-direction: column-reverse;
+}
+.iconecarrinho{
+  margin-left: 25px;
+}
+
+.logo{
+  justify-content: center;
+  align-items: center;
+  
+}
+.icones-header{
+  margin-left: 40px;
+  margin-bottom: 19px;
+}
+.logo img{
+  width: 230px;
+  margin-left: 25px;
+}
+
+header nav ul{
+  display:list-item;
+ font-size: 150%;
+ margin-top: 3%;
+}
+
+header nav ul li{
+  margin: auto;
+}
+.sub-menu-1{
+  display: none;
+}
+.content{
+  display: none;
+}
+
+}
+
